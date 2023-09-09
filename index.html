@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum=1.0, maximum-scale=2.0">
+    <meta name="author" content="Ted-MA, mated0122@gmail.com">
+    <title>Welcome to TETE Magic Shop</title>
+    
+    <!-- 網路字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- 網站小圖示 -->
+    <link rel="shortcut icon" href="images/icon.png">
+    
+    <!-- 加入手機主畫面捷徑圖示 -->
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
+    <!-- google圖標 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- 自訂圖標 -->
+    <link rel="stylesheet" href="CSS/iconstyle.css">
+    
+    <!-- 歸零設定CSS -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    
+    <!-- 變數設定CSS -->
+    <link rel="stylesheet" href="CSS/basic.css">
+    
+    <!-- 版面設定CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- 媒體查詢 -->
+    <link rel="stylesheet" href="CSS/style_m.css" media="(min-width:980px) and (max-width:1239px)">
+    <link rel="stylesheet" href="CSS/style_s.css" media="(max-width:979px)">
+
+    <!-- 輪播橫幅CSS -->
+    <link rel="stylesheet" href="CSS/slide.css">
+
+    <!-- JQ共用參數庫 for 橫幅 & Gotop -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- 橫幅輪播JS宣告 -->
+    <script src="js/slide.min.js"></script>
+
+    <!-- GotopJS宣告 -->
+    <script src="js/gotop.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <h1 title="Go back to Homepage"><span>TETE MAGIC SHOP</span><a href="index.html"></a></h1>
+        </div>
+        <div id="nav">
+            <!-- 上層固定選單 -->
+            <nav id="top-nav">
+                <ul>
+                    <li><a href="#0"><span class="material-icons">app_shortcut</span><span class="topnav-text">Go To APP</span></a></li>
+                    <li><a href="#0"><span class="material-icons">storefront</span><span class="topnav-text">Online Shop</span></a></li>
+                </ul>
+            </nav>
+
+            <nav id="main-nav">
+                <!-- 漢堡選單 -->
+                <span class="tip">Click to Open Nevigation.</span>
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><!-- 漢堡三條線 -->
+                    <div></div>
+                </div>
+                <!-- 主選單 -->
+                <div class="menu"><!-- 整體選單範圍 -->
+                    <div><!-- 設定選單背景色 -->
+                        <div><!-- 選單內容外框架 -->
+                            <ul><!-- 原選單 -->
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="stores.html">Stores</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="news.html">News<span class="material-icons">arrow_drop_down</span></a>
+                                    <ul>
+                                        <li><a href="news_lady.html">Lady</a></li>
+                                        <li><a href="news_girl.html">Girl</a></li>
+                                        <li><a href="news_child.html">Child</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+            
+                                <!-- SNS選單 -->
+                                <p id="nav-sns">
+                                    <a href="https://www.facebook.com/tetemagicshop/" target="_blank"><span class="icon-iFB"></span></a>
+                                    <a href="https://www.instagram.com/tete_magic_shop/" target="_blank"><span class="icon-iIG"></span></a>
+                                    <a href="https://www.linkedin.com/tetemagicshop/" target="_blank"><span class="icon-iTL"></span></a>
+                                    <a href="https://www.skype.com/tetemagicshop/" target="_blank"><span class="icon-iYT"></span></a>
+                                    <a href="https://www.twitter.com/tetemagicshop/" target="_blank"><span class="icon-iTW"></span></a>
+                                </p>
+                            </ul>            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- 橫幅圖片 -->
+    <div id="banner">
+    <!--<img src="images/banner01.svg" alt="tarot, magic">-->
+
+    <div id="slide2d" class="slide-carousel slide-2d"> 
+        <ul class="item-list">
+            <li class="item0">
+                <div class="item-content">
+                    <a href="#0">
+                        <picture>
+                            <source media="(min-width:768px) and (max-width:959px)" srcset="images/store01.png">
+                            <source media="(max-width:768px)" srcset="images/lady-1.png">
+                            <img src="images/banner01.png" alt="tarot, magic">
+                        </picture>
+                    </a>
+                </div>
+            </li>
+            <li class="item1">
+                <div class="item-content">
+                    <a href="#0">
+                        <picture>
+                            <source media="(min-width:768px) and (max-width:959px)" srcset="images/store02.png">
+                            <source media="(max-width:768px)" srcset="images/lady-2.png">
+                            <img src="images/banner02.png" alt="tarot, magic">
+                        </picture>
+                    </a>
+                </div>
+            </li>
+            <li class="item2">
+                <div class="item-content">
+                    <a href="#0">
+                        <picture>
+                            <source media="(min-width:768px) and (max-width:959px)" srcset="images/store03.png">
+                            <source media="(max-width:768px)" srcset="images/lady-3.png">
+                            <img src="images/banner03.png" alt="tarot, magic">
+                        </picture>
+                    </a>
+                </div>
+            </li>
+            <li class="item3">
+                <div class="item-content">
+                    <a href="#0">
+                        <picture>
+                            <source media="(min-width:768px) and (max-width:959px)" srcset="images/store04.png">
+                            <source media="(max-width:768px)" srcset="images/lady-4.png">
+                            <img src="images/banner04.png" alt="tarot, magic">
+                        </picture>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- 指示小圖示 -->
+        <div class="indicator-list">
+            <a href="#0" data-slide-index="0" class="selected"></a>
+            <a href="#0" data-slide-index="1"></a>
+            <a href="#0" data-slide-index="2"></a>
+            <a href="#0" data-slide-index="3"></a>
+        </div>
+        <!-- 左右控制器 -->
+        <div class="controls">
+            <a href="#0" class="item-prev" glyphicon glyphicon-menu-left></a>
+            <a href="#0" class="item-next" glyphicon glyphicon-menu-right></a>
+        </div>
+        <!-- 黑色底塊 -->
+        <div class="desc"></div>
+    </div>
+
+    <!-- <picture>
+        <source media="(min-width:768px) and (max-width:959px)" srcset="images/banner01.svg">
+        <source media="(max-width:768px)" srcset="images/08.jpg">
+        <img src="images/banner01.svg" alt="tarot, magic">
+    </picture> -->
+
+    </div>
+    
+    <!-- 內容區塊 -->
+    <div id="main-content">
+        <div class="slogan">
+            <h2>能身院邊荷做冒幾寺馬</h2>
+            <p>女乾帽蝸原道連：半夏玩人紅哥家忍坡雪：光坐服玩米，鼻找過告。事了從服學風科兌共常申裝而米，雪布面個牙。</p>
+            <p> 四頭方石升每習。雲您食讀院你一愛多對你怪雨呢說。民干喜支已跑扒停您林澡，車青士者貫，見良清昔植浪會游千！吹言老五米笑。</p>
+            <p>停旁常光冰貝良它借風欠裝爬合、夏爬古英乾原手古平民「聽間看位」各什外課。果裏風土目條村、目收雪種訴布念犬走夕植歡習比幸男，唱金追幼反住能。化定乾節又田元哭跳頁多歌定。</p>
+            <p>爸冒飽請馬地追服：真澡忍朱立少父目光水兔做去，玉巴人這頭辛帶泉飛年原陽、跳用朋大邊今元打！牙彩還找。老圓鴨花甲免。</p>
+        </div>
+        <div class="post">
+            <div class="post_title">實竹七娘跳房</div>
+            <div class="post_img"><a href="products.html"><img src="images/postimg01.svg" alt="magic"></a></div>
+            <div class="post_text">老太兔片童斗幼送。祖卜買忍魚跑，身久尤蝸方！人候四示雲母爪穿出肖氣禾聽：工有記相鳥穴包牛力畫化。花喝園文加歡刃汗追欠聽昌能對西，穴牛朋弟力也來家貫戶流乞包半亭看玩，來乾師生乙勿找媽巾姐布工。</div>
+            <div class="more"><a href="products.html">View More...<i class="material-icons">double_arrow</i></a></div>
+        </div>
+        <div class="post">
+            <div class="post_title">實竹七娘跳房</div>
+            <div class="post_img"><a href="products.html"><img src="images/postimg02.svg" alt="magic"></a></div>
+            <div class="post_text">老太兔片童斗幼送。祖卜買忍魚跑，身久尤蝸方！人候四示雲母爪穿出肖氣禾聽：工有記相鳥穴包牛力畫化。花喝園文加歡刃汗追欠聽昌能對西，穴牛朋弟力也來家貫戶流乞包半亭看玩，來乾師生乙勿找媽巾姐布工。</div>
+            <div class="more"><a href="products.html">View More...<i class="material-icons">double_arrow</i></a></div>
+        </div>
+    </div>
+
+    <!-- 四張圖區塊 --> 
+    <div id="picshow">
+        <a href="products.html"><img src="images/picshow1.svg" alt="magic" title="Click to see more"></a>
+        <a href="products.html"><img src="images/picshow2.svg" alt="magic" title="Click to see more"></a>
+        <a href="products.html"><img src="images/picshow3.svg" alt="magic" title="Click to see more"></a>
+        <a href="products.html"><img src="images/picshow4.svg" alt="magic" title="Click to see more"></a>
+    </div>
+    
+    <!-- 內嵌影片 -->
+    <div id="movie">
+        <iframe src="https://www.youtube.com/embed/eKoy8SSB63Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    <!-- 頁尾區塊 -->
+    <div id="footer">
+        <div id="small-logo"><img src="images/logo-small.svg" alt="magic"></div>
+        <div id="copyright">
+            <small>Copyright &copy;2023 TETE Magic Shop</small>
+            <a href="tel:+886900000000">tel:+886900000000</a>
+        </div>
+        <div id="sns">
+            <a href="https://www.facebook.com/tetemagicshop/" target="_blank"><span class="icon-iFB"></span></a>
+            <a href="https://www.instagram.com/tete_magic_shop/" target="_blank"><span class="icon-iIG"></span></a>
+            <a href="https://www.linkedin.com/tetemagicshop/" target="_blank"><span class="icon-iTL"></span></a>
+            <a href="https://www.skype.com/tetemagicshop/" target="_blank"><span class="icon-iYT"></span></a>
+            <a href="https://www.twitter.com/tetemagicshop/" target="_blank"><span class="icon-iTW"></span></a>
+        </div>
+    </div>
+
+    <!-- GoTop區塊 -->
+    <div id="gotop">
+        <span class="material-icons">arrow_circle_up</span>
+        <span class="gotip">Go Back To Top</span>
+    </div>
+
+
+
+    <!-- 上方的改成 <div id="gotop" onclick="topFunction()">
+    <script>
+        var myButton=document.getElementById("gotop");//設定變數指定gotop
+        window.onscroll=function(){scrollFunction()};//設定畫面捲動時執行函式scrollFunction
+
+        function scrollFunction(){//設定捲動條件
+         if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
+            myButton.style.display="block";
+         }else{
+            myButton.style.display="none";
+         }
+        }
+
+        function topFunction(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+    </script> -->
+
+
+</body>
+</html>

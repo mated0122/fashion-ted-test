@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum=1.0, maximum-scale=2.0">
+    <meta name="author" content="Ted-MA, mated0122@gmail.com">
+    <title>Welcome to TETE Magic Shop - News-Girl</title>
+    
+    <!-- 網路字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- 網站小圖示 -->
+    <link rel="shortcut icon" href="images/icon.png"> 
+    
+    <!-- 加入手機主畫面捷徑圖示 -->
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
+    <!-- google圖標 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- 歸零設定CSS -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    
+    <!-- 變數設定CSS -->
+    <link rel="stylesheet" href="CSS/basic.css">
+    
+    <!-- 版面設定CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <!-- 媒體查詢 -->
+    <link rel="stylesheet" href="CSS/style_m.css" media="(min-width:980px) and (max-width:1239px)">
+    <link rel="stylesheet" href="CSS/style_s.css" media="(max-width:979px)">
+
+    <!-- 載入共用JQ -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <!-- PicBox JQ -->
+    <script src="http://www.jq22.com/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/picbox.js"></script>
+    <link rel="stylesheet" href="CSS/picbox.css">
+
+    <!-- Gotop JS -->
+    <script src="js/gotop.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <h1 title="Go back to Homepage"><span>TETE MAGIC SHOP</span><a href="index.html"></a></h1>
+        </div>
+        <div id="nav">
+            <!-- 上層固定選單 -->
+            <nav id="top-nav">
+                <ul>
+                    <li><a href="#0"><span class="material-icons">app_shortcut</span><span class="topnav-text">Go To APP</span></a></li>
+                    <li><a href="#0"><span class="material-icons">storefront</span><span class="topnav-text">Online Shop</span></a></li>
+                </ul>
+            </nav>
+
+            <nav id="main-nav">
+                <!-- 漢堡選單 -->
+                <span class="tip">Click to Open Nevigation.</span>
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><!-- 漢堡三條線 -->
+                    <div></div>
+                </div>
+                <!-- 主選單 -->
+                <div class="menu"><!-- 整體選單範圍 -->
+                    <div><!-- 設定選單背景色 -->
+                        <div><!-- 選單內容外框架 -->
+                            <ul><!-- 原選單 -->
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="stores.html">Stores</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="news.html">News<span class="material-icons">arrow_drop_down</span></a>
+                                    <ul>
+                                        <li><a href="news_lady.html">Lady</a></li>
+                                        <li><a href="news_girl.html">Girl</a></li>
+                                        <li><a href="news_child.html">Child</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+            
+                                <!-- SNS選單 -->
+                                <p id="nav-sns">
+                                    <a href="https://www.facebook.com/tetemagicshop/" target="_blank"><span class="icon-iFB"></span></a>
+                                    <a href="https://www.instagram.com/tete_magic_shop/" target="_blank"><span class="icon-iIG"></span></a>
+                                    <a href="https://www.linkedin.com/tetemagicshop/" target="_blank"><span class="icon-iTL"></span></a>
+                                    <a href="https://www.skype.com/tetemagicshop/" target="_blank"><span class="icon-iYT"></span></a>
+                                    <a href="https://www.twitter.com/tetemagicshop/" target="_blank"><span class="icon-iTW"></span></a>
+                                </p>
+                            </ul>            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- 橫幅圖片 -->
+    <div class="hero-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(images/banner01.png);">
+        <div class="hero-text">
+            <h1 class="font_size-50 line_height-15 font_weight-bolder text-uppercase">Girl's Hot News</h1>
+            <h3 class="margin_top-50">
+                <a href="news.html" class="text-uppercase font_weight-bolder">News</a>
+                <i class="material-icons">keyboard_arrow_right</i>Girl
+            </h3>
+        </div>
+    </div>
+    
+    <!-- 內容區塊 -->
+    <div id="main-content" class="bgc-piggy overflow_hidden">
+        <!-- 左側圖文 -->
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>【我的命，注定一生如此嗎？】談談業力</h2>
+                <h5>這幾年常常會有人說業力引爆，那業力到底是甚麼？</h5>
+                <div class="cardimg"><img src="images/girl-1.png" alt=""></div>
+                <p>首先，「業力」來自於梵文的「<span style="font-weight: bolder; color: var(--pink);">Karma</span>」翻譯而成。業力本身其實是一個 #中性詞，沒有好壞、沒有善惡、沒有詛咒厄運，因為業力指的是「因果」，也就是你做好事，就會有好報；你做壞事，就會有惡報。你種甚麼種子，就會結什麼果實。<br>🎼在小小的花園裡～挖呀挖呀挖～種小小種子～開小小的花🌹～</p>
+                <p><img src="images/girl-1-1.png" alt=""><img src="images/girl-1-2.png" alt="" class="margin_bottom-20"></p>
+                <p>然而，業力有可能來自前世，也可能是這一世所產生的。我很認同印度的一名精神導師Swami Sri Yukteswar Giri對業力所做的解釋，他認為一個人出生時，會受前世業力的影響、束縛，然而並不完全如此，因為人有自由意志，可以決定自己在這一世的行動如何，透過祈求、改變、修行等方式，達到這一世的幸福或超脫🫶<br>我們身處的環境，應該大家不難聽聞命理，甚至你也有可能曾經去給某某大師「算命」，可能是 #八字、#星盤、#紫微斗數 等，來論斷你這一生的「命」如何，會不會 #發大財 #好桃花 #生孩子 等等。好像…在這些影響之下，我們似乎難以去反轉自己被束縛的命運，好似一個只能依造安排好的劇本走的魁儡，好似我們在這一世，就得要屈服於前世的自己所留下的業力，來還債一樣！</p>
+                <p>雖然不否認這一世有可能是來還債的，但我們要怎麼還、如何還，實際上我們是可以選擇的！所以，我認為這就是為甚麼會需要引爆業力！業力的因果概念讓我們看見自己與生俱來的業力因果，同時，也讓我們看見這一世需要修行的議題。<br>業力的引爆對我來說，是讓我們看見自己一直重複發生的事件，可能是好事，也可能是壞事。當然，如果是好事你可能覺得沒甚麼要修行的地方，那我們就先來說點傷心事吧～也許在過去，或是你認識的人當中，有人總是在感情裡遇到渣男渣女；也有人莫名的對搭飛機、搭船感到莫大的恐懼；也有些人持續的對藥物、物質上癮而無法戒除。有可能從前是帶來的因果，也有可能是你／他在這一世所種下的因果業力。</p>
+            </div>
+
+            <div class="card">
+                <h2>【我的命，注定一生如此嗎？】談談業力</h2>
+                <h5>這幾年常常會有人說業力引爆，那業力到底是甚麼？</h5>
+                <div class="cardimg"><img src="images/girl-2.png" alt=""></div>
+                <p>首先，「業力」來自於梵文的「<span style="font-weight: bolder; color: var(--pink);">Karma</span>」翻譯而成。業力本身其實是一個 #中性詞，沒有好壞、沒有善惡、沒有詛咒厄運，因為業力指的是「因果」，也就是你做好事，就會有好報；你做壞事，就會有惡報。你種甚麼種子，就會結什麼果實。<br>🎼在小小的花園裡～挖呀挖呀挖～種小小種子～開小小的花🌹～</p>
+                <p>然而，業力有可能來自前世，也可能是這一世所產生的。我很認同印度的一名精神導師Swami Sri Yukteswar Giri對業力所做的解釋，他認為一個人出生時，會受前世業力的影響、束縛，然而並不完全如此，因為人有自由意志，可以決定自己在這一世的行動如何，透過祈求、改變、修行等方式，達到這一世的幸福或超脫🫶<br>我們身處的環境，應該大家不難聽聞命理，甚至你也有可能曾經去給某某大師「算命」，可能是 #八字、#星盤、#紫微斗數 等，來論斷你這一生的「命」如何，會不會 #發大財 #好桃花 #生孩子 等等。好像…在這些影響之下，我們似乎難以去反轉自己被束縛的命運，好似一個只能依造安排好的劇本走的魁儡，好似我們在這一世，就得要屈服於前世的自己所留下的業力，來還債一樣！</p>
+                <p>雖然不否認這一世有可能是來還債的，但我們要怎麼還、如何還，實際上我們是可以選擇的！所以，我認為這就是為甚麼會需要引爆業力！業力的因果概念讓我們看見自己與生俱來的業力因果，同時，也讓我們看見這一世需要修行的議題。<br>業力的引爆對我來說，是讓我們看見自己一直重複發生的事件，可能是好事，也可能是壞事。當然，如果是好事你可能覺得沒甚麼要修行的地方，那我們就先來說點傷心事吧～也許在過去，或是你認識的人當中，有人總是在感情裡遇到渣男渣女；也有人莫名的對搭飛機、搭船感到莫大的恐懼；也有些人持續的對藥物、物質上癮而無法戒除。有可能從前是帶來的因果，也有可能是你／他在這一世所種下的因果業力。</p>
+            </div>
+        </div>
+        <!-- 右側圖塊 -->
+        <div class="rightcolumn">
+            <!-- Highlight News -->
+            <div class="card">
+                <h2>Highlight News</h2>
+                <div class="cardimg"><img src="images/girl-s6.png" alt="" class="pic-drop_shadow"></div>
+                <p>業力引爆，就是讓我們去正視這些人生這些不斷循環發生的事件，而這些事件可能會讓我們產生各種負面情緒、狀態，導致生活變得不平靜、不順遂。<br>（也許某些好的事情也業力引爆，持續的發生好事情，但要小心注意不要變成貪婪就好，總之過猶不及）</p>
+            </div>
+            <!-- Popular Post -->
+            <div class="card">
+                <h2>Popular Post</h2>
+                <a href="images/girl-s1.png" rel="lightbox-group1" title="11111">
+                    <div class="cardimg"><img src="images/girl-s1.png" alt=""></div>
+                    <span>11111</span>
+                </a>
+                <a href="images/girl-s2.png" rel="lightbox-group1" title="22222">
+                    <div class="cardimg"><img src="images/girl-s2.png" alt=""></div>
+                    <span>22222</span>
+                </a>
+                <a href="images/girl-s3.png" rel="lightbox-group1" title="33333">
+                    <div class="cardimg"><img src="images/girl-s3.png" alt=""></div>
+                    <span>33333</span>
+                </a>
+                <a href="images/girl-s4.png" rel="lightbox-group1" title="44444">
+                    <div class="cardimg"><img src="images/girl-s4.png" alt=""></div>
+                    <span>44444</span>
+                </a>
+                <a href="images/girl-s5.png" rel="lightbox-group1" title="55555">
+                    <div class="cardimg"><img src="images/girl-s5.png" alt=""></div>
+                    <span>55555</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾區塊 -->
+    <div id="footer">
+        <div id="small-logo"><img src="images/logo-small.svg" alt="magic"></div>
+        <div id="copyright">
+            <small>Copyright &copy;2023 TETE Magic Shop</small>
+            <a href="tel:+886900000000">tel:+886900000000</a>
+        </div>
+        <div id="sns">
+            <a href="https://www.facebook.com/tetemagicshop/" target="_blank"><span class="icon-iFB"></span></a>
+            <a href="https://www.instagram.com/tete_magic_shop/" target="_blank"><span class="icon-iIG"></span></a>
+            <a href="https://www.linkedin.com/tetemagicshop/" target="_blank"><span class="icon-iTL"></span></a>
+            <a href="https://www.skype.com/tetemagicshop/" target="_blank"><span class="icon-iYT"></span></a>
+            <a href="https://www.twitter.com/tetemagicshop/" target="_blank"><span class="icon-iTW"></span></a>
+        </div>
+    </div>
+
+    <!-- GoTop區塊 -->
+    <div id="gotop">
+        <span class="material-icons">arrow_circle_up</span>
+        <span class="gotip">Go Back To Top</span>
+    </div>
+</body>
+</html>
